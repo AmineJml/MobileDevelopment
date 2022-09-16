@@ -7,57 +7,31 @@
     android:background="#4A938C"
     tools:context=".LandingPage">
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="238dp"
-        android:layout_height="79dp"
-        android:layout_marginTop="68dp"
-        android:text="Exchange"
-        android:textAlignment="center"
-        android:textColor="#F8F7F7"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toTopOf="@+id/input_txt_username"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.329" />
-
     <EditText
         android:id="@+id/input_txt_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Input value here"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.661"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txt_finalValue"
-        android:layout_width="201dp"
-        android:layout_height="45dp"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.657"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_txt_value"
-        app:layout_constraintVertical_bias="0.093" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.523" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="132dp"
+        android:layout_marginStart="100dp"
         android:onClick="LLToD"
         android:text="LL -> $"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_finalValue"
-        app:layout_constraintVertical_bias="0.135" />
+        app:layout_constraintVertical_bias="0.076" />
 
     <Button
         android:id="@+id/button4"
@@ -67,43 +41,29 @@
         android:text="$ -> LL"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.339"
+        app:layout_constraintHorizontal_bias="0.296"
         app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/txt_finalValue"
-        app:layout_constraintVertical_bias="0.135" />
+        app:layout_constraintVertical_bias="0.076" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="211dp"
-        android:layout_height="149dp"
-        app:layout_constraintBottom_toTopOf="@+id/input_txt_value"
+    <TextView
+        android:id="@+id/txt_finalValue"
+        android:layout_width="201dp"
+        android:layout_height="45dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/dollar" />
+        app:layout_constraintTop_toBottomOf="@+id/input_txt_value"
+        app:layout_constraintVertical_bias="0.092" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="277dp"
-        android:layout_height="127dp"
-        android:layout_marginBottom="44dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:srcCompat="@drawable/ll"
-        tools:layout_editor_absoluteX="76dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="122dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="66dp"
-        android:text="Input value here -->"
-        app:layout_constraintBottom_toBottomOf="@+id/input_txt_value"
-        app:layout_constraintEnd_toStartOf="@+id/input_txt_value"
-        app:layout_constraintHorizontal_bias="0.272"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0" />
+        android:layout_width="504dp"
+        android:layout_height="378dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/input_txt_value"
+        app:srcCompat="@drawable/money"
+        tools:layout_editor_absoluteX="-15dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
