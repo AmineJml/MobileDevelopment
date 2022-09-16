@@ -9,9 +9,9 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="277dp"
-        android:layout_height="127dp"
-        android:layout_marginBottom="36dp"
+        android:layout_width="402dp"
+        android:layout_height="187dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,7 +65,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_txt_password"
-        app:layout_constraintVertical_bias="0.385" />
+        app:layout_constraintVertical_bias="0.137" />
 
     <TextView
         android:id="@+id/textView"
@@ -80,6 +80,6 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.329" />
+        app:layout_constraintVertical_bias="0.471" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

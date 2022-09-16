@@ -23,17 +23,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.329" />
 
-    <TextView
-        android:id="@+id/txt_finalValue"
-        android:layout_width="201dp"
-        android:layout_height="45dp"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_txt_value"
-        app:layout_constraintVertical_bias="0.094" />
-
     <EditText
         android:id="@+id/input_txt_value"
         android:layout_width="wrap_content"
@@ -42,10 +31,33 @@
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.661"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.501" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_finalValue"
+        android:layout_width="201dp"
+        android:layout_height="45dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.657"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_txt_value"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:onClick="LLToD"
+        android:text="LL -> $"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_finalValue"
+        app:layout_constraintVertical_bias="0.135" />
 
     <Button
         android:id="@+id/button4"
@@ -55,22 +67,10 @@
         android:text="$ -> LL"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.668"
+        app:layout_constraintHorizontal_bias="0.339"
         app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/txt_finalValue"
-        app:layout_constraintVertical_bias="0.212" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:onClick="LLToD"
-        android:text="LL -> $"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_finalValue"
-        app:layout_constraintVertical_bias="0.212" />
+        app:layout_constraintVertical_bias="0.135" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -92,5 +92,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:srcCompat="@drawable/ll"
         tools:layout_editor_absoluteX="76dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="122dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="66dp"
+        android:text="Input value here -->"
+        app:layout_constraintBottom_toBottomOf="@+id/input_txt_value"
+        app:layout_constraintEnd_toStartOf="@+id/input_txt_value"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
