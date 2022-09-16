@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         String username_val = username.getText().toString();
         String password_val = password.getText().toString();
 
-        if(username_val.equals("") && password_val.equals(""))
+        if(username_val.equals("user.leb") && password_val.equals("123456"))
         {
             Toast.makeText(this, "Hello" + username_val, Toast.LENGTH_LONG).show();
             Intent i = new Intent(this, LandingPage.class);
